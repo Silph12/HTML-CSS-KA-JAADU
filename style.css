@@ -1,0 +1,151 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    background: #151815;
+    color: #eee9df;
+    font-family: Arial, sans-serif;
+}
+
+
+/* NAVIGATION */
+
+nav {
+    padding: 20px 8%;
+    display: flex;
+    align-items: center;
+}
+
+nav h2 {
+    margin-right: auto;
+    letter-spacing: 4px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 25px;
+}
+
+
+/* HERO */
+
+.hero {
+    height: 75vh;
+    padding: 10%;
+    display: flex;
+    align-items: center;
+
+    background:
+    linear-gradient(#11111155, #111111aa),
+    url("shoebill.jpg");
+
+    background-size: cover;
+    background-position: center;
+}
+
+.hero h1 {
+    font-family: Georgia, serif;
+    font-size: 90px;
+    margin: 15px 0;
+}
+
+.hero p {
+    max-width: 450px;
+    line-height: 1.7;
+}
+
+
+/* ABOUT */
+
+.about {
+    padding: 80px 12%;
+    display: flex;
+    gap: 100px;
+}
+
+.about div {
+    flex: 1;
+}
+
+.about h2 {
+    font-family: Georgia, serif;
+    font-size: 50px;
+}
+
+.about p {
+    line-height: 1.8;
+}
+
+
+/* FACTS */
+
+.facts {
+    padding: 70px 10%;
+    background: #20251f;
+}
+
+.fact-box {
+    display: flex;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.fact-box div {
+    flex: 1;
+    padding: 25px;
+    border: 1px solid #44483f;
+}
+
+.fact-box h2 {
+    font-family: Georgia, serif;
+    font-size: 35px;
+}
+
+.fact-box h3 {
+    margin: 15px 0;
+}
+
+.fact-box p {
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+
+/* FOOTER */
+
+footer {
+    padding: 35px 10%;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer p {
+    color: #aaa79d;
+}
+
+
+/* MOBILE */
+
+@media(max-width: 700px) {
+
+    .hero h1 {
+        font-size: 60px;
+    }
+
+    .about {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .fact-box {
+        flex-direction: column;
+    }
+
+    footer {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
